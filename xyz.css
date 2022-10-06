@@ -1,0 +1,121 @@
+#myVideo {
+    position:fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+  }
+  
+  .app-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+  }
+  
+  header input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(17, 19, 17, 0.125);
+    border-radius: 0px 16px 0px 16px;
+    border-bottom: 3px solid rgb(144, 194, 233);
+  
+    color:black;
+    font-size: 20px;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+  }
+  
+  header input:focus {
+    background-color: rgba(12, 13, 14, 0.6);
+  }
+  
+  main {
+    flex: 1 1 100%;
+    padding: 25px 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .location .city {
+    color: #fff;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 550;
+    margin-bottom: 10px;
+    text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
+    padding: 17px;
+    background-color: black;
+    border-radius: 10px;
+  }
+  
+  
+  .location .date {
+    color: #fff;
+    font-size: 18px;
+    padding: 13px;
+    background-color: black;
+    border-radius: 70px;
+  }
+  
+  .current .temp {
+    color:black;
+    font-size: 102px;
+    font-weight: 900;
+    margin: 30px 0px;
+    text-shadow: 2px 10px rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    background-color: rgb(159, 252, 252);
+    border-radius: 10px;
+  }
+  
+  .current .temp span {
+    font-weight: 500;
+  }
+  
+  .current .weather {
+    color: rgb(215, 251, 98);
+    font-size: 32px;
+    font-weight: 700;
+    font-style:oblique;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: black;
+    border-radius: 10px;
+    text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
+  }
+  
+  .current .hi-low {
+    color: rgb(249, 120, 120);
+    padding: 15px;
+    background-color: black;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: 500;
+    max-width: 300px;
+    text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
+  }
